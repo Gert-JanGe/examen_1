@@ -1,25 +1,32 @@
-const book1 = {
+interface Book{
+  title: string;
+  author: string;
+  pages: number;
+  isAvailable: boolean;
+} 
+
+const book1: Book = {
   title: "The Great Gatsby",
   author: "F. Scott Fitzgerald",
   pages: 218,
   isAvailable: true,
 };
 
-const book2 = {
+const book2: Book = {
   title: "To Kill a Mockingbird",
   author: "Harper Lee",
   pages: 281,
   isAvailable: false,
 };
 
-const book3 = {
+const book3: Book = {
   title: "1984",
   author: "George Orwell",
   pages: 328,
   isAvailable: true,
 }
 
-function borrowBook(book, borrower) {
+function borrowBook(book: Book, borrower: string): string {
   if (book.isAvailable) {
     book.isAvailable = false;
     return `${borrower} heeft "${book.title}" geleend.`;
@@ -28,16 +35,16 @@ function borrowBook(book, borrower) {
   }
 }
 
-function returnBook(book) {
+function returnBook(book: Book): string {
   book.isAvailable = true;
   return `"${book.title}" is teruggebracht en nu weer beschikbaar.`;
 }
 
-function bookSummary(book) {
+function bookSummary(book: Book): string {
   return `${book.title} geschreven door ${book.author}, ${book.pages} pagina's. Beschikbaar: ${book.isAvailable ? 'Ja' : 'Nee'}`;
 }
 
-function getAvailableBooks(books) {
+function getAvailableBooks(books: Book[]): Book[] {
   return books.filter(book => book.isAvailable);
 }
 
