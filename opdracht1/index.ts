@@ -1,3 +1,7 @@
+/**
+ * Punten 5/5
+ */
+
 interface Book{
   title: string;
   author: string;

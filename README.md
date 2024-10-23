@@ -30,3 +30,10 @@ Elke opdracht bevat een eigen README.md-bestand met instructies. Lees deze goed 
 - Opdracht 1: 5 punten
 - Opdracht 2: 10 punten
 - Opdracht 3: 10 punten
+
+## Verbeterd
+- Opdracht 1: 5/5
+- Opdracht 2: 10/10
+- Opdracht 3: 10/10
+
+**Totaal 100/100**

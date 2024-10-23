@@ -1,3 +1,7 @@
+/**
+ * Punten 10/10
+ */
+
 enum Vak{
     Frontend,
     Netwerkbeheer,
@@ -24,3 +28,6 @@ interface Student {
 }
 
 type SyntraProfile = Student | Docent;
+
+const myTeacher: Docent = { naam: "Anneleen", vakken: [Vak.Frontend], uurloon: 100, gewerkteUren: 10 };
+console.log(calculateInvoice(myTeacher));
